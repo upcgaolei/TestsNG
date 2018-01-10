@@ -24,6 +24,7 @@ public class TestNG extends AbstractTestNGSpringContextTests {
     @Resource
     private MacInterface macInterface;
 
+    //10个线程并发进行100次调用
     @Test(invocationCount = 100, threadPoolSize = 10)
     public void testHello() {
         System.out.println("current thread: " + Thread.currentThread().getId());
