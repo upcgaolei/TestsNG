@@ -17,9 +17,7 @@ import javax.annotation.Resource;
  * @author zhougaolei
  */
 
-@Test
-@ContextConfiguration(locations = {"classpath:spring-config-test.xml"})
-public class TestNG extends AbstractTestNGSpringContextTests {
+public class TestNG extends AbstractTest {
 
     @Resource
     private MacInterface macInterface;
